@@ -1,0 +1,14 @@
+{
+  "rules": [
+    {
+      "id": "SIGMA-001",
+      "title": "Suspicious SSH Brute Force Activity",
+      "severity": "High",
+      "tactic": "Credential Access",
+      "mitre_ref": "T1110",
+      "log_source": "auth.log / Cowrie",
+      "description": "Detects multiple failed password attempts from a single external IP address.",
+      "query": "selection:\n  event: 'Failed password'\n  count: '> 5'"
+    }
+  ]
+}

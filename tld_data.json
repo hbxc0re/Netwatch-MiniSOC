@@ -1,0 +1,22 @@
+{
+  "tlds": [
+    {
+      "tld": ".ru",
+      "risk": "Critical",
+      "category": "high_risk",
+      "malicious_pct": "34.2%",
+      "active_ioc": "1,420+",
+      "registrar": "Coordination Center for TLD RU",
+      "notes": "High density of phishing domains, botnet C2 servers, and ransomware drop sites."
+    },
+    {
+      "tld": ".cn",
+      "risk": "High",
+      "category": "high_risk",
+      "malicious_pct": "28.5%",
+      "active_ioc": "2,100+",
+      "registrar": "CNNIC",
+      "notes": "Frequently observed in targeted espionage reconnaissance and supply chain probes."
+    }
+  ]
+}

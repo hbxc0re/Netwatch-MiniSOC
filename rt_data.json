@@ -1,0 +1,23 @@
+{
+  "categories": [
+    {
+      "id": "rt_osint",
+      "title": "1. OSINT & Recon",
+      "subtitle": "External attack surface reconnaissance and dorking",
+      "icon": "🕵️",
+      "topics": [
+        {
+          "title": "Passive & Active Reconnaissance",
+          "phase": "Reconnaissance",
+          "summary": "Gathering intelligence on target infrastructure without triggering defensive alarms.",
+          "bullets": [
+            "DNS Enumeration: Sublist3r, Amass, and dnsenum.",
+            "Port Scanning: Nmap SYN scan with timing templates (-T4).",
+            "OSINT Dorking: SearXNG and custom python automation scripts."
+          ],
+          "code": "nmap -sS -p- -T4 --min-rate=1000 192.0.2.10 -oN /root/nmap_scan.txt"
+        }
+      ]
+    }
+  ]
+}

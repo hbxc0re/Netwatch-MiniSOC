@@ -1,0 +1,23 @@
+{
+  "categories": [
+    {
+      "id": "netsec_arch",
+      "title": "1. Defensible Architecture",
+      "subtitle": "Network segmentation, DMZs, and zero trust principles",
+      "icon": "🏗️",
+      "topics": [
+        {
+          "title": "Zone-Based Firewall Segmentation",
+          "phase": "Network Security",
+          "summary": "Isolating critical server assets from guest and IoT network segments using VLANs and stateful firewalls.",
+          "bullets": [
+            "Perimeter Defense: Next-gen firewalls with IDS/IPS enabled.",
+            "Internal Segmentation: Micro-segmentation between hypervisors and storage networks.",
+            "Egress Filtering: Restricting outbound connections to authorized ports only."
+          ],
+          "code": "iptables -A FORWARD -m state --state ESTABLISHED,RELATED -j ACCEPT\niptables -A FORWARD -p tcp --dport 22 -j DROP"
+        }
+      ]
+    }
+  ]
+}

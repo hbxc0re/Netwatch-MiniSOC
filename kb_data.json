@@ -1,0 +1,24 @@
+{
+  "categories": [
+    {
+      "id": "ir_core",
+      "title": "1. IR Process & Legal",
+      "subtitle": "Incident response lifecycle, containment, and chain of custody",
+      "icon": "🧭",
+      "topics": [
+        {
+          "title": "NIST Incident Response Lifecycle",
+          "phase": "Preparation & Detection",
+          "summary": "Standard 4-phase framework covering Preparation, Detection & Analysis, Containment, Eradication & Recovery, and Post-Incident Activity.",
+          "bullets": [
+            "Preparation: Establish IR plan, communication channels, and tooling.",
+            "Detection & Analysis: Monitor telemetry, triage alerts, and determine scope.",
+            "Containment, Eradication & Recovery: Isolate hosts, remove persistence, and restore services.",
+            "Post-Incident: Conduct lessons learned and update detection rules."
+          ],
+          "code": "find /var/log -type f -exec sha256sum {} \\; > /root/baseline_hashes.txt"
+        }
+      ]
+    }
+  ]
+}

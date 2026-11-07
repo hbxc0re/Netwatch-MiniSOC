@@ -1,0 +1,20 @@
+{
+  "sample_iocs": [
+    {
+      "indicator": "185.220.101.5",
+      "type": "IPv4",
+      "threat": "SSH Brute Force Botnet",
+      "confidence": "98%",
+      "source": "CrowdSec / AbuseIPDB",
+      "status": "Blocked"
+    },
+    {
+      "indicator": "45.154.255.88",
+      "type": "IPv4",
+      "threat": "SQLi Exploit Scanner",
+      "confidence": "95%",
+      "source": "AlienVault OTX",
+      "status": "Blocked"
+    }
+  ]
+}
