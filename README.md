@@ -8,6 +8,7 @@
 > **Attribution & Acknowledgement:** This project is a containerized, expanded adaptation and modern telemetry enhancement of **[NetWatch](https://github.com/matthart1983/netwatch)**, originally created by **[matthart1983](https://github.com/matthart1983)**.
 
 **NetWatch Unified Mini-SOC** is a containerized Security Operations Center (SOC) dashboard, live honeypot telemetry visualizer, and interactive Blue/Red Team field encyclopedia. Built with **FastAPI**, **TailwindCSS**, and **Leaflet.js**, it integrates side-by-side with **T-Pot Honeypot** sensors (`Cowrie`, `Dionaea`) and open-source threat intelligence feeds.
+
 Coded with the assistance of Gemini Argon mostly to clean up anything that was broken along the way and suggestive changes. 
 This was mostly a learning experience and to test the capabilities of Gemini Argon. 
 ---
