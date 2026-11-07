@@ -1,0 +1,25 @@
+services:
+  netwatch-home:
+    build: .
+    container_name: netwatch-home
+    ports:
+      - "3000:3000"
+    environment:
+      - SOC_HOST_IP=${SOC_HOST_IP:-192.0.2.10}
+      - DEST_LAT=${DEST_LAT:-39.8283}
+      - DEST_LON=${DEST_LON:--98.5795}
+    restart: unless-stopped
+
+  tpot-cowrie:
+    image: cowrie/cowrie:latest
+    container_name: tpot-cowrie
+    ports:
+      - "2222:2222"
+    restart: unless-stopped
+
+  tpot-dionaea:
+    image: dinotools/dionaea:latest
+    container_name: tpot-dionaea
+    ports:
+      - "445:445"
+    restart: unless-stopped
