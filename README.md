@@ -12,6 +12,8 @@
 Coded with the assistance of Gemini Argon mostly to clean up anything that was broken along the way and suggestive changes. 
 This was mostly a learning experience and to test the capabilities of Gemini Argon. 
 
+<img width="1819" height="1989" alt="MiniSOC" src="https://github.com/user-attachments/assets/98cb7dc5-4124-49b0-b193-c0fdbca029d2" />
+
 ---
 
 ## ✨ Core Capabilities
