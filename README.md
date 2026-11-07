@@ -11,6 +11,7 @@
 
 Coded with the assistance of Gemini Argon mostly to clean up anything that was broken along the way and suggestive changes. 
 This was mostly a learning experience and to test the capabilities of Gemini Argon. 
+
 ---
 
 ## ✨ Core Capabilities
