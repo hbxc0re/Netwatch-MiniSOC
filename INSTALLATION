@@ -1,0 +1,36 @@
+# ⚙️ NetWatch Unified Mini-SOC — Complete Installation Guide
+
+This guide covers setting up, running, and publishing your containerized NetWatch Mini-SOC on Ubuntu Server or homelab VM using Docker Compose.
+
+Step 1: Clone or Create Your Project Directory
+On your server, create your project folder and move into it:
+mkdir netwatch-soc && cd netwatch-soc
+mkdir static
+
+Step 2: Configure Environment Variables (Optional)
+If you want to customize your local server IP or map target coordinates:
+cp .env.example .env
+nano .env
+
+Step 3: Build and Launch the Stack
+Run Docker Compose to build the container images and start all services in the background:
+docker compose up --build -d
+
+Step 4: Verify Running Containers
+Check that your services are up and running properly:
+docker compose ps
+
+Step 5: Access the Dashboard
+Open your web browser and navigate to:
+http://YOUR_SERVER_IP:3000
+
+Step 6: Firewall & Port Reference
+- NetWatch Web UI (Port 3000 TCP)
+- Cowrie Honeypot (Ports 2222, 2223 TCP)
+- Dionaea Honeypot (Ports 445, 21 TCP)
+
+Recommended UFW Firewall Rules (Ubuntu)
+sudo ufw allow from 192.168.0.0/16 to any port 3000 proto tcp comment 'Allow NetWatch UI on LAN only'
+sudo ufw allow 2222/tcp comment 'Allow Cowrie SSH trap'
+sudo ufw allow 445/tcp comment 'Allow Dionaea SMB trap'
+sudo ufw enable
